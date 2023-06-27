@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 laba</title>
+    <style>
+        /*1*/
+        div p {
+            background-color:aquamarine;
+        }
+        /*2*/
+        div h2 {
+            background-color: rgb(216, 95, 176);
+        }
+        /*3*/
+        #test p{
+            background-color: bisque;
+        }
+        /*4*/
+        #test h2 {
+            background-color:burlywood;
+        }
+        /*5*/
+        .bbb{
+            background-color: blue;
+        }
+        /*6*/
+        #test.bbb{
+            background-color: rgb(109, 88, 125);
+        }
+        /*7*/
+        p.bbb{
+            background-color:rgb(66, 45, 45)
+        }
+        /*8*/
+        h2.bbb{
+            background-color: sienna;
+            padding: 4px;}
+        
+        /*9*/
+        #test p.bbb{
+            background-color: forestgreen;
+        }
+        /*10*/
+        div h2,p{
+            background-color: cornflowerblue;
+        }
+        /*11*/
+        .bbb,.xxx{
+            background-color: orchid;
+            padding: 4px;}
+        
+        /*12*/
+        p.bbb,h2.xxx{
+            background-color: salmon;
+        }
+        /*13*/
+        #test p.bbb,#test p.xxx{
+            background-color: crimson;
+            transform: rotate(-1deg);
+        }
+        /*14*/
+        .fff{
+            background-color: rgb(255, 182, 182);
+        }
+        /*15*/
+        .fff p{
+            background-color: chocolate;
+        }
+        /*16*/
+        p.fff{
+            background-color: cornflowerblue;
+            transform: rotate(2deg);
+        }
+        /*17*/
+        .fff .bbb{
+            background-color: rgb(202, 120, 156);
+        }
+        /*18*/
+        .fff h2.bbb{
+            background-color: darkslateblue;
+            transform: rotate(-1deg);
+        }
+        /*19*/
+         #test a:link,#test a:visited{
+            text-decoration:none;
+            color:red;
+        }
+        #test a:hover{
+            text-decoration:underline;
+            color:blue;
+        }
+        a:link.www, a:visited.www {
+            text-decoration:underline;
+            color:blue;
+        }
+        a:hover.www{
+            text-decoration:none;
+        }
+        /*20*/
+        #test a.www:link{
+             color: darkgreen;}
+        /*21*/
+        #test a:link.www{
+            color:black;
+        }
+        #test a:visited.www{
+            color:orange;
+        }
+        #test a:hover.www{
+            color:deepskyblue;
+        }
+        #test a:active.www {
+            color: green;
+        }
+        /*22*/
+        .eee a:link.www{
+            color:black;
+        }
+        .eee a:visited.www{
+            color:orange;
+        }
+        .eee a:hover.www{
+            color:deepskyblue;
+        }
+        .eee a:active.www{
+            color:green;
+        }
+        /*23*/
+        p>i{
+            color: white;
+        }
+        /*24*/
+        ul>li{
+            background-color: mediumblue;
+            color: gold;
+        }
+        /*25*/
+        p>a.test{
+            background-color: black;
+            color: white;
+        }
+        /*26*/
+        b+i{
+            color: mediumblue;
+        }
+        /*27*/
+        #test b+i{
+            color: black;
+        }
+        /*28*/
+        ul+p{
+            color: tomato;
+        }
+        /*29*/
+        h1~p{
+            color: rgb(64, 82, 46);
+        }
+        /*30*/
+        #test h2~p{
+            color: rgb(194, 111, 52);
+        }
+        /*31*/
+        p * i{
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Задание 1</p>
+        <h2>Задание 2</h2>
+    </div>
+    <div id="test">
+        <p>Задание 3</p>
+        <h2>Задание 4</h2>
+    </div>
+    <span class="bbb">Задание 5</span>
+    <div id="test">
+        <div class="bbb">Задание 6</div>
+    </div>
+    <p class="bbb">Задание 7</p>
+    <h2 class="bbb">Задание 8</h2>
+    <div id="test">
+        <p class="bbb">Задание 9</p>
+    </div>
+    <div><h2><p>10 Задание</p></h2></div>
+    <div class="bbb" class="xxx">11 Задание</div>
+    <p class="bbb"><h2 class="xxx">12 Задание</h2></p>
+    <div id="test">
+        <p class="xxx">Задание 13</p>
+        <div class="fff">Задание 14</div>
+    </div>
+    <div class="fff">
+        <p>Задание 15</p>
+    </div>
+    <p class="fff">Задание 16</p>
+    <p class="fff">
+        <span class="bbb">Задание 17</span>
+    </p>
+    <div class="fff">
+        <h2 class="bbb">Задание 18</h2>
+    </div>
+    <div id="test">
+        <a href="">Задание 19</a><br>
+    </div>
+    <a class="www" href="">Задание 20</a>
+    <div id="test">
+        <a class="www" href="">Задание 21</a>
+        <br>
+        <b></b>
+        <i>Задание 27</i>
+        <h2></h2>
+        <p>Задание 30</p>
+    </div>
+    <div class="eee">
+        <a class="www" href="">Задание 22</a>
+    </div>
+    <p><i>Задание 23</i></p>
+    <ul><li>Задание 24</li></ul>
+    <p>Задание 28</p>
+    <p><a class="test" href="">Задание 25</a></p>
+    <b></b>
+    <i>Задание 26</i>
+    <h1></h1>
+    <p>Задание 29</p>
+    <p><b><i>Задание 31</i></b></p>
+</body>
+</html>
